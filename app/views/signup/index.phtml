@@ -1,0 +1,34 @@
+
+<h2>Sign up using this form</h2>
+
+<?php echo $this->tag->form("signup/register"); ?>
+
+<p>
+	<label for="email">E-Mail</label>
+	<?php echo $this->tag->emailField("email")?>
+</p>
+
+    <p>
+        <label for="password">Lozinka</label>
+        <?php echo $this->tag->passwordField("password") ?>
+    </p>
+
+    <p>
+        <label for="ime">Ime</label>
+        <?php echo $this->tag->textField("ime") ?>
+    </p>
+
+    <p>
+        <label for="prezime">Prezime</label>
+        <?php echo $this->tag->textField("prezime") ?>
+    </p>
+
+    <p>
+        <label for="datum_rodenja">Datum roðenja</label>
+        <?php echo $this->tag->dateField("datum_rodenja") ?>
+    </p>
+<p>
+	<?php echo $this->tag->submitButton("Register") ?>
+</p>
+
+</form>
